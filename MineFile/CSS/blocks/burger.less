@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.burger {
+    padding: 9px 2px;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger__item {
+    content: "";
+    display: block;
+    width: 2.3rem;
+    height: 4px;
+    
+    background-color: rgba(@black, .6);
+    border-radius: 2px;
+    
+    color: transparent;
+    font-size: 0;
+    
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    display: block;
+    width: 2.3rem;
+    height: 4px;
+    
+    background-color: rgba(@black, .6);
+    border-radius: 2px;
+    
+    position: absolute;
+}
+
+.burger__item:before {
+    top: -8px;
+}
+
+.burger__item:after {
+    top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

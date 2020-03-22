@@ -1,0 +1,39 @@
+// compress: true
+
+@import "vars";
+
+body {
+    margin: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: @black;
+    font-size: 1.06rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+} 
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    padding: 0 15px;
+}
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/intro";
+@import "blocks/message";
+@import "blocks/process";
+@import "blocks/btn";
+@import "blocks/featured";
