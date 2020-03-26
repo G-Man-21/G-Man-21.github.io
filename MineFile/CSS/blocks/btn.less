@@ -1,40 +1,42 @@
 // main: ../style.less
 
 .btn {
-    display: inline-block;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
     
-    text-decoration: none;
+    color: rgba(@black, .8);
     font-size: 1.06rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(20,20,21,0.09);
     border-radius: 27px;
-    
+    border: 0;
 }
 
+/* message */
 .btn--orange {
-    padding: 1rem 4rem;
-    
     margin-top: 1.3rem; 
     background-color: #ff5c36;
     color: #fff;
 }
 
 
-
-.process__btn {
-    padding: 0 1.2rem;
-}
-
+/* process */
 .btn--process {
     position: relative;
     top: -25px;
     left: 0;
     z-index: 1000;
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-    
-    color: rgba(@black, .8);
-    
+        
+    box-shadow: none;
+}
+
+
+.btn--white {
     background-color: #fff;
     
     transition: box-shadow .2s linear;
@@ -44,6 +46,19 @@
     }
 }
 
+.plus {
+    margin-right: 17px;
+    width: 16px;
+    width: 16px;
+    opacity: .6;
+}
+
+
+/* footer */
+.btn--footer {
+    width: 240px;
+    outline: none;
+}
 
 
 

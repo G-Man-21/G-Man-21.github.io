@@ -6,6 +6,7 @@ body {
     margin: 0;
     
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: @black;
     font-size: 1.06rem;
 }
@@ -28,6 +29,33 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 15px;
 }
 
+/* Header Title */
+.header__title {
+    margin-bottom: 20px;
+    
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .7);
+    line-height: 0.915;
+    
+    text-align: center;
+    padding: 0 11rem;
+    
+    span {
+        color: rgba(@orange, .8);
+    }
+}
+
+.header__text {
+    font-size: 1.06rem;
+    line-height: 1.563;
+    color: rgba(0, 0, 0, 0.502);
+    
+    text-align: center;
+    padding: 0 11rem;
+
+}
+
 
 /* Blocks */
 @import "blocks/header";
@@ -37,3 +65,8 @@ h1,h2,h3,h4,h5,h6 {
 @import "blocks/process";
 @import "blocks/btn";
 @import "blocks/featured";
+@import "blocks/service";
+@import "blocks/team";
+@import "blocks/reviews";
+@import "blocks/partner";
+@import "blocks/footer";
