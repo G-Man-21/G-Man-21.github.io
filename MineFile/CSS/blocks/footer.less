@@ -11,7 +11,7 @@
 /* btn */
 .btn--footer {
     width: 240px;
-    margin: 0 auto 40px;
+    margin: 0 auto 2.6rem;
 }
 
 .footer__social {
@@ -68,6 +68,37 @@
 .copyright__text {
     width: 50%;
     margin-left: 20px;
+}
+
+
+
+/* media */
+@media @mobile {
+    /* btn */
+    .btn--footer {
+        margin-bottom: 2rem;
+    }
+    
+    
+    /*  icon  */
+        
+    .footer__icon {
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .footer__social {
+        flex-direction: column;
+    }
+    
+    
+    /*  copyright  */
+    .copyright__text {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
 }
 
 

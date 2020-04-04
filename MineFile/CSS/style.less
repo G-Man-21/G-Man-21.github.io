@@ -29,32 +29,42 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 15px;
 }
 
+
 /* Header Title */
 .header__title {
     margin-bottom: 20px;
     
     font-size: 3.3rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, .7);
-    line-height: 0.915;
+    color: rgba(0, 0, 0, .64);
+    line-height: 1;
     
     text-align: center;
-    padding: 0 11rem;
-    
     span {
-        color: rgba(@orange, .8);
+        color: rgba(@orange, .64);
+    }
+    
+    @media @mobile {
+        font-size: 3rem;
+    }
+    
+    @media @mobile-sm {
+        font-size: 2.5rem;
     }
 }
 
 .header__text {
     font-size: 1.06rem;
     line-height: 1.563;
-    color: rgba(0, 0, 0, 0.502);
+    color: rgba(0, 0, 0, 0.34);
     
     text-align: center;
-    padding: 0 11rem;
-
 }
+
+
+
+
+
 
 
 /* Blocks */

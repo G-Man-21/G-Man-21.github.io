@@ -8,13 +8,21 @@
     z-index: 1000;
         
     padding: 1.33rem 2.66rem;
-    margin-top: 7.66rem;
+    margin-top: 7.6rem;
     width: 100%;
     max-width: 370px;
     text-align: center;
     
     background-color: white;
     box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+    
+    @media @mobile {
+        margin: 7.6rem auto 0;
+    }
+    
+    @media @mobile-sm {
+        margin: 3.6rem auto 0;
+    }
 }
 
 .form__message {

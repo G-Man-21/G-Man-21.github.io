@@ -1,11 +1,17 @@
 // main: ../style.less
 
 .burger {
-    padding: 9px 2px;
+    display: none;
     
+    padding: 9px 2px;
     background: none;
     border: none;
     cursor: pointer;
+    outline: none;
+    
+    @media @tablet {
+        display: block;
+    }
 }
 
 .burger__item {

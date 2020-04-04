@@ -8,6 +8,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 70px 0;
+    text-align: center;
+    padding-top: 4.6rem;
+}
+
+.logo__item {
+    margin-bottom: 4.6rem;
+}
+
+.logo__img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* media */
+@media @tablet {
+    .partner__logo {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    
+    .logo__item {
+        width: 33.33%;
+        flex-wrap: wrap;
+    }
+}
+
+@media @mobile-sm {
+    .partner__logo {
+        padding-top: 2.6rem;
+    }
+    
+    .logo__item {
+        width: 100%;
+        margin-bottom: 2.6rem;
+    }
 }

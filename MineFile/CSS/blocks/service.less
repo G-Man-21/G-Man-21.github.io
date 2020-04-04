@@ -1,42 +1,57 @@
 // main: ../style.less
 
+
+
 .service {
-    margin: 145px 0 170px;
+    margin: 9.6rem 0 11.3rem;
 }
 
-/* Header */
 
+
+
+
+/* Header */
 .service__header {
     margin-bottom: 9.3rem;
 }
 
-/* Service Content */ 
 
+
+/* Service Content */ 
 .service__content {
     display: flex;
     max-width: 100%;
 }
 
-.item--icon {
-    width: 15.7%;
-}
-
 .item__content {
-    width: 84.3%;
+    width: 80%;
     display: flex;
 }
 
-.item__description {
-    width: 61%;
+
+
+
+
+/* img */
+.item__img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item__img {
-    width: 39%;
+.service__img {
+    max-width: 100%;
 }
+
+
 
 
 
 /* Icon */
+.item__icon {
+    width: 20%;
+}
 
 .service__icon {
     margin-bottom: 7px;
@@ -57,13 +72,22 @@
 }
 
 .icon__img {
+    max-width: 100%;
+    
     position: absolute;
     top: 60%;
     left: 60%;
     transform: translate3d(-50%, -50%, 0);
 }
 
+
+
+
+
 /* Content */
+.item__description {
+    width: 55%;
+}
 
 .description__title {
     margin-bottom: 19px;
@@ -82,7 +106,7 @@
 }
 
 .description__text {
-    margin-bottom: 43px;
+    margin-bottom: 2.8rem;
     line-height: 1.563;
 }
 
@@ -92,10 +116,92 @@
 }
 
 
-/* Img */
 
-.service__img {
-    max-width: 100%;
+
+/*  Media  */
+@media @tablet {
+    .service {
+        margin: 7.6rem 0 9.3rem;
+    }
+     
+    .service__header {
+        margin-bottom: 7.3rem;
+    }
+    
+    .service__content {
+        display: block;
+    }
+    
+    
+    
+    /* icon */      
+    .item__icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .service__icon {
+        margin: 0 1rem 5rem;
+    }
+    
+    
+    
+    /* content */
+    .item__content {
+        width: 100%;
+    }
+    
+    .item__description {
+        padding-left: 2rem;
+    }
+}
+
+
+
+@media @mobile {
+    .item__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item__img {
+        width: 100%;
+    }
+    
+    .service__img {
+        display: none;
+    }
+    
+    .service__icon {
+        margin: 0 .5rem 3rem;
+    }
+    
+    .item__description {
+        padding: 0;
+        width: 80%;
+    }
+    
+    .btn--server {
+        margin: 0 auto;
+    }
+}
+
+@media @mobile-sm {
+        
+    .service__icon {
+        border-radius: 20px;
+        margin-bottom: 2rem;
+    }
+    
+    .item__description {
+        width: 90%;
+    }
+    
+        
+    .description__text {
+        margin: 0;
+    }
 }
     
 
