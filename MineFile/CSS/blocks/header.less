@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.nav__show {
+    display: flex;
+}
+
 
 
 /* logo */
@@ -34,30 +38,21 @@
 
 
 
+
+
 /* nav */
-.nav {
-    display: flex;
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-
-}
-
-.nav__link:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: fade(@orange, 70%);
-    border-radius: 2px;
-    
-    position: relative;
-    top: 100%;
-    left: 0;
-    
+.navbar {
     transition: width .2s linear;
 }
 
+.nav {
+    display: flex;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    
+    position: relative;
+    overflow: hidden;
+}
 
 
 .nav__link {
@@ -65,18 +60,34 @@
     color: rgba(0,0,0,0.54);
     margin: 0 1.5rem;
     
-    transition: border-bottom .2s ease; 
+    transition: border-bottom .2s ease;
+    transition: transform .3s linear .2s;
 
-    &:hover {
-        &:before {
-            width: 100%;
-        }
+    &:hover:after {
+        width: 100%;
     }
     
-    &:first-child {
-        margin-left: 0;
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        background-color: fade(@orange, 70%);
+        border-radius: 2px;
+
+        transition: width  .2s linear;
     }
 }
+
+
+
 
 
 
@@ -89,17 +100,71 @@
     }
 }
 
+
+
+
 @media @tablet {
+    .navbar {
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 100%;
+        width: 0;
+    }
+    
+    .nav {
+        flex-direction: column;
+    }
+    
     .nav__link {
-        display: none;
+        padding: 20px 30px;
+        margin: 5px 0;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        background-color: #fff;
+        text-align: center;
+        
+        transition: padding .2s linear;
+        
+        &:after {
+            margin: 0;
+        }
+
+        &:hover {
+            padding-right: 100px;
+        }
+    }
+    
+    .navbar-show {  /* show menu for mobile */
+        width: 200px;
     }
 }
+
+
+
 
 @media @mobile-sm {
     .header {
         top: 1rem;
     }
 }
+
+
+
+
+
+
+// js 
+.fixed {  /* show navbar when scroll */
+    position: fixed;
+    top: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+
+
+
+
 
 
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"> <!--open sans-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap" rel="stylesheet">  <!-- source sans pro -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>  <!--slick js-->  
+    <link rel="stylesheet" href="CSS/style.css"> <!-- CSS  -->
     <title>Smart</title>
 </head>
 <body>
@@ -13,35 +14,36 @@
 <!--  header  -->
 <header class="header">
     <div class="container">
-        
-       <div class="header__inner">
-          
-           <div class="header__logo">
+
+        <div class="header__inner">
+
+            <div class="header__logo">
                <span>S</span>mart
-           </div>
-           
-           
-           <nav class="nav">
-               <a href="#" class="nav__link">Work</a>
-               <a href="#" class="nav__link">Features</a>
-               <a href="#" class="nav__link">Service</a>
-               <a href="#" class="nav__link">Team</a>
-               <a href="#" class="nav__link">Clients</a>
-               
-               <button type="button" class="burger">
-                   <span class="burger__item">Menu</span>
-               </button>
-           </nav>
-           
-       </div> 
-        
+            </div>
+
+            <div class="navbar">
+                <nav class="nav">
+                    <a href="#" class="nav__link" data-scroll="#work">Work</a>
+                    <a href="#" class="nav__link" data-scroll="#features">Features</a>
+                    <a href="#" class="nav__link" data-scroll="#service">Service</a>
+                    <a href="#" class="nav__link" data-scroll="#team">Team</a>
+                    <a href="#" class="nav__link" data-scroll="#clients">Clients</a>
+                </nav>
+            </div>
+
+            <button type="button" class="burger" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+
+        </div> 
+
     </div>
 </header>
 <!--  /.header  -->
        
 
 <!--  Intro  -->
-<div class="intro">
+<div class="intro" id="intro">
     <div class="container">
         
         <div class="intro__header">
@@ -75,7 +77,7 @@
        
        
 <!--  process  -->
-<div class="process">
+<div class="process" id="work">
     <div class="container">
            
             <div class="process__header">
@@ -153,7 +155,7 @@
               
               
 <!--  featured  -->
-<div class="featured">
+<div class="featured" id="features">
     <div class="container">
         
         <div class="featured__header">
@@ -220,7 +222,7 @@
               
               
 <!--  service  -->
-<div class="service">
+<div class="service" id="service">
     <div class="container">
         
         <div class="service__header">
@@ -235,21 +237,21 @@
         <div class="service__content">
             
             <div class="item__icon">
-                <div class="service__icon">
+                <div class="service__icon icon__shadow" data-icon="#block-1">
                     <img src="img/service/ls6b.png" alt="" class="icon__img">
-                </div>    
-                <div class="service__icon">    
+                </div>     
+                <div class="service__icon" data-icon="#block-2">    
                     <img src="img/service/ls4b.png" alt="" class="icon__img">
                 </div>    
-                <div class="service__icon">    
+                <div class="service__icon" data-icon="#block-3">    
                     <img src="img/service/ls3b.png" alt="" class="icon__img">
                 </div>    
-                <div class="service__icon">    
+                <div class="service__icon" data-icon="#block-4">    
                     <img src="img/service/ls6b%20copy.png" alt="" class="icon__img">
                 </div>
             </div>
             
-            <div class="item__content">
+            <div class="item__content item__show" id="block-1">
                 <div class="item__description">
                     <div class="description__title">
                         Modern App Design
@@ -272,6 +274,75 @@
                 </div>
             </div>
             
+            <div class="item__content" id="block-2">
+                <div class="item__description">
+                    <div class="description__title">
+                        Modern App Something 
+                    </div>
+
+                    <div class="description__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                        <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+
+                    <a href="" class="btn btn--white btn--server">
+                        <img class="plus" src="img/btn/plus.svg">Know More
+                    </a>
+                </div>
+
+                <div class="item__img">
+                    <img class="service__img" src="img/service/iphone_11_PNG42.png" alt="" class="service__img">
+                </div>
+            </div>
+            
+            <div class="item__content" id="block-3">
+                <div class="item__description">
+                    <div class="description__title">
+                        Modern App Structure 
+                    </div>
+
+                    <div class="description__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                        <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+
+                    <a href="" class="btn btn--white btn--server">
+                        <img class="plus" src="img/btn/plus.svg">Know More
+                    </a>
+                </div>
+
+                <div class="item__img">
+                    <img class="service__img" src="img/service/ipad.jpg" alt="" class="service__img">
+                </div>
+            </div>
+            
+            <div class="item__content" id="block-4">
+                <div class="item__description">
+                    <div class="description__title">
+                        Modern App Form
+                    </div>
+
+                    <div class="description__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                        <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+
+                    <a href="" class="btn btn--white btn--server">
+                        <img class="plus" src="img/btn/plus.svg">Know More
+                    </a>
+                </div>
+
+                <div class="item__img">
+                    <img class="service__img" src="img/service/macbook.jpg" alt="" class="service__img">
+                </div>
+            </div>
+            
         </div>
         
     </div>
@@ -280,7 +351,7 @@
               
               
 <!--  team  -->
-<div class="team">
+<div class="team" id="team">
     <div class="container">
         
         <div class="team__header">
@@ -388,8 +459,8 @@
                     <div class="author">
                         <div class="author__info">
                             <div class="author__name">Wormy Cat</div>
-                            <div class="author__prof">UI/UX Designer
-</div>
+                            <div class="author__prof">UI/UX Designer</div>
+
                             <div class="author__social">
                                 <a class="social__icon" href="#">
                                     <img src="img/team/social/twitter.svg" alt="">
@@ -472,7 +543,7 @@
 
 
 <!--  reviews  -->
-<div class="reviews">
+<div class="reviews" id="clients">
     <div class="container">
         
         <div class="reviews__header">
@@ -484,13 +555,8 @@
             </div>
         </div>
         
+        
         <div class="reviews__slider" id="reviewsSlider">
-           
-            <button class="arrow arrow-left">
-                <img src="img/slider/left-arrow.svg" alt="">
-            </button>
-           
-           
            
             <div class="slick__item">
                 <div class="reviews__item">
@@ -541,18 +607,104 @@
                 </div>
             </div>
             
+            <div class="slick__item">
+                <div class="reviews__item">
+                   
+                    <div class="reviews__photo">
+                        <img src="img/avatar/avatar-1.png" alt="">
+                    </div>
+                    
+                    <div class="reviews__content">
+                        <div class="reviews__text">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="reviews__reting">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                        </div>
+                        <div class="reviews__author">
+                            <span>Kita Say,</span> HK Director
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            <div class="slick__item">
+                <div class="reviews__item">
+                   
+                    <div class="reviews__photo">
+                        <img src="img/avatar/avatar-2.png" alt="">
+                    </div>
+                    
+                    <div class="reviews__content">
+                        <div class="reviews__text">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</div>
+                        <div class="reviews__reting">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                        </div>
+                        <div class="reviews__author">
+                            <span>Al Rayhan,</span> UX Director
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             
+            <div class="slick__item">
+                <div class="reviews__item">
+                   
+                    <div class="reviews__photo">
+                        <img src="img/avatar/avatar-1.png" alt="">
+                    </div>
+                    
+                    <div class="reviews__content">
+                        <div class="reviews__text">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+                        </div>
+                        <div class="reviews__reting">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                        </div>
+                        <div class="reviews__author">
+                            <span>Kita Say,</span> HK Director
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            <div class="slick__item">
+                <div class="reviews__item">
+                   
+                    <div class="reviews__photo">
+                        <img src="img/avatar/avatar-2.png" alt="">
+                    </div>
+                    
+                    <div class="reviews__content">
+                        <div class="reviews__text">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</div>
+                        <div class="reviews__reting">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                            <img src="img/stars/star.svg" height="11px" alt="">
+                        </div>
+                        <div class="reviews__author">
+                            <span>Al Rayhan,</span> UX Director
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             
-            <button class="arrow arrow-right">
-                <img src="img/slider/right-arrow.svg" alt="">
-            </button>
-            
-        </div>
-        
-        <div class="slick__line">
-            <div class="slick__active" id="active"></div>
-            <div></div>
-            <div></div>
         </div>
         
     </div>
@@ -627,7 +779,8 @@
 <!--  /.footer  -->            
     
 
-
-                
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--slick js-->
+<script src="JS/app.js"></script>               
 </body>
 </html>

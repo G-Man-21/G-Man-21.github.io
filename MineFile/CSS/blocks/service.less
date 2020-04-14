@@ -25,6 +25,11 @@
 
 .item__content {
     width: 80%;
+    max-height: 390px;
+    display: none;
+}
+
+.item__show {
     display: flex;
 }
 
@@ -65,10 +70,11 @@
     position: relative;
     
     transition: box-shadow linear .2s;
-    
-    &:hover {
-        box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
-    }
+}
+
+
+.icon__shadow {
+    box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
 }
 
 .icon__img {
@@ -106,8 +112,8 @@
 }
 
 .description__text {
-    margin-bottom: 2.8rem;
-    line-height: 1.563;
+    margin-bottom: 2.3rem;
+    line-height: 1.5;
 }
 
 .item__description .btn--white {
@@ -198,7 +204,6 @@
         width: 90%;
     }
     
-        
     .description__text {
         margin: 0;
     }
